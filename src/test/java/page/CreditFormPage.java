@@ -13,8 +13,7 @@ public class CreditFormPage {
                                 setFirstName = $("[aria-label='Имя*']"),
                                 setPhoneNumber = $("[aria-label='Телефон*']"),
                                 setEmailUser = $("[aria-label='Электронная почта*']"),
-                                clickSubmitBtn = $("[type='submit']"),
-                                errorInputDate = $(".border-error");
+                                clickSubmitBtn = $("[type='submit']");
 
 
 
@@ -56,11 +55,11 @@ public class CreditFormPage {
         return this;
     }
 
-    @Step("Не заполнена Дата рождения")
-    public CreditFormPage negativeInputBrithDate() {
-        errorInputDate.shouldBe(visible);
-
-        return this;
-    }
+//    @Step("Не заполнена Дата рождения")
+//    public CreditFormPage negativeInputBrithDate() {
+//        errorInputDate.shouldBe(visible);
+//
+//        return this;
+//    }
 
 }

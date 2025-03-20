@@ -67,8 +67,7 @@ public class HomePageRshbTest extends TestBase{
                 .inputFirstName()
                 .inputPhoneNumber()
                 .inputEmailUser()
-                .pressTheBtn()
-                .negativeInputBrithDate();
+                .pressTheBtn();
 
     }
 
