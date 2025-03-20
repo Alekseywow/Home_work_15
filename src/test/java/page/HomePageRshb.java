@@ -40,7 +40,7 @@ public class HomePageRshb {
 
     @Step("Открыть страницу")
     public HomePageRshb openMyPage() {
-        open("https://www.rshb.ru/");
+        open("");
 
         return this;
     }

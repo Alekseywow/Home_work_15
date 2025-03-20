@@ -13,7 +13,8 @@ public class CreditFormPage {
                                 setFirstName = $("[aria-label='Имя*']"),
                                 setPhoneNumber = $("[aria-label='Телефон*']"),
                                 setEmailUser = $("[aria-label='Электронная почта*']"),
-                                clickSubmitBtn = $("[type='submit']");
+                                clickSubmitBtn = $("[type='submit']"),
+                                seeModalWindow = $("[title='Диалог']");
 
 
 
@@ -29,7 +30,7 @@ public class CreditFormPage {
 
     @Step("Ввести Имя")
     public CreditFormPage inputFirstName() {
-        setFirstName.setValue(testData.firstName).scrollTo();
+        setFirstName.setValue(testData.firstName);
 
         return this;
     }
@@ -50,16 +51,15 @@ public class CreditFormPage {
 
     @Step("Нажать на кнопку Оформить")
     public CreditFormPage pressTheBtn() {
-        clickSubmitBtn.click();
+        clickSubmitBtn.doubleClick();
 
         return this;
     }
 
-//    @Step("Не заполнена Дата рождения")
-//    public CreditFormPage negativeInputBrithDate() {
-//        errorInputDate.shouldBe(visible);
-//
-//        return this;
-//    }
+    @Step("Появилось модальное окно")
+    public CreditFormPage modalWindowInfo() {
+        seeModalWindow.shouldBe(visible);
 
+        return this;
+    }
 }

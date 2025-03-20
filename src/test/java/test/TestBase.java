@@ -25,7 +25,7 @@ public class TestBase {
         Configuration.browser = "chrome";
         Configuration.browserVersion = "127";
  //        Configuration.timeout = 10000;
-//        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = true;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
