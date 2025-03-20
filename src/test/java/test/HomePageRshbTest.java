@@ -3,15 +3,19 @@ package test;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import page.CreditFormPage;
 import page.HomePageRshb;
+
+import static com.codeborne.selenide.Selenide.sleep;
 
 public class HomePageRshbTest extends TestBase{
 
     HomePageRshb homePageRshb = new HomePageRshb();
+    CreditFormPage creditFormPage = new CreditFormPage();
 
     @Test
     @DisplayName("Проверка вкладок меню при открытии страницы")
-    void homePage3(){
+    void cheekMenuTabsTest(){
         homePageRshb.openMyPage()
                 .closeCookieBannerVisible()
                 .headerChips();
@@ -21,32 +25,49 @@ public class HomePageRshbTest extends TestBase{
 
     @Test
     @DisplayName("Проверка возможности выбора Филиала Свердловск")
-    void homePage(){
+    void cheekTheBranchSelectionTest(){
+        homePageRshb.openMyPage()
+                .closeCookieBannerVisible()
+                .clickRegionHomePage()
+                .clickSearchAndSetRegion();
+
 
     }
 
     @Test
-    @DisplayName("Проверка количества банкоматов в Свердловской области")
-    void homePage1(){
-
+    @DisplayName("Проверка количества офисов и банкоматов в Свердловской области")
+    void checkTheNumberOfficeAndAtmsInTheRegionSverdlovskTest(){
+        homePageRshb.openMyPage()
+                .closeCookieBannerVisible()
+                .clickRegionHomePage()
+                .clickSearchAndSetRegion()
+                .clickOfficeAndAtmsAndCheckNumber();
     }
 
     @Test
-    @DisplayName("Проверика перехода на страницу ")
+    @DisplayName("Проверка перехода на страницу Частным клиентам")
     void homePage2(){
-
+        homePageRshb.openMyPage()
+                .closeCookieBannerVisible()
+                .clickMoreDetailsClientPrivate();
     }
 
 
-    @Test
-    @DisplayName("Проверка перехода на страницу ")
-    void homePage4(){
-
-    }
 
     @Test
-    @DisplayName("Проверка неудачного заполнения кредитной карты")
-    void homePage5(){
+    @DisplayName("Проверка незаполненного заполнения кредита")
+    void negativeCreditCardFillCheck(){
+        homePageRshb.openMyPage()
+                .closeCookieBannerVisible()
+                .clickMoreDetailsClientPrivate()
+                .clickOnTheSubmitCredit();
+        creditFormPage.inputLastName()
+                .inputLastName()
+                .inputFirstName()
+                .inputPhoneNumber()
+                .inputEmailUser()
+                .pressTheBtn()
+                .negativeInputBrithDate();
 
     }
 

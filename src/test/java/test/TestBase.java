@@ -8,6 +8,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
+import static com.codeborne.selenide.Selenide.sleep;
+
 public class TestBase {
 
     @BeforeAll
@@ -15,11 +17,19 @@ public class TestBase {
         Configuration.baseUrl = "https://www.rshb.ru/";
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
+        Configuration.browser = "chrome";
+        Configuration.browserVersion = "134.0.6998.89";
+//        Configuration.holdBrowserOpen = true;
     }
 
     @BeforeEach
      void beforeEach() {
         SelenideLogger.addListener("allure", new AllureSelenide());
+    }
+
+    @AfterEach
+    void afterEach(){
+        Selenide.closeWebDriver();
     }
 
 //    @AfterEach
