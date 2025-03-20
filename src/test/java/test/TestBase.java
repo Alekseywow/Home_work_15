@@ -21,10 +21,10 @@ public class TestBase {
         Configuration.baseUrl = "https://www.rshb.ru/";
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+//        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         Configuration.browser = "chrome";
         Configuration.browserVersion = "127";
-        Configuration.timeout = 10000;
+ //        Configuration.timeout = 10000;
 //        Configuration.holdBrowserOpen = true;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -32,6 +32,7 @@ public class TestBase {
                 "enableVNC", true,
                 "enableVideo", true
         ));
+        Configuration.browserCapabilities = capabilities;
 
     }
 
