@@ -8,6 +8,7 @@ import page.HomePageRshb;
 
 import static com.codeborne.selenide.Selenide.sleep;
 
+@Tag("Smoke")
 public class HomePageRshbTest extends TestBase{
 
     HomePageRshb homePageRshb = new HomePageRshb();

@@ -7,17 +7,6 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation(
-            "com.codeborne:selenide:7.0.0",
-            "com.github.javafaker:javafaker:1.0.2",
-            "org.junit.jupiter:junit-jupiter:5.10.0",
-            'org.slf4j:slf4j-simple:2.0.7',
-            'io.qameta.allure:allure-selenide:2.27.0'
-    )
-    runtimeOnly 'org.aspectj:aspectjweaver:1.9.22.1'
-}
-
 allure {
     report {
         version.set("2.29.0")
@@ -31,6 +20,19 @@ allure {
         }
     }
 }
+
+dependencies {
+    testImplementation(
+            "com.codeborne:selenide:7.0.0",
+            "com.github.javafaker:javafaker:1.0.2",
+            "org.junit.jupiter:junit-jupiter:5.10.0",
+            'org.slf4j:slf4j-simple:2.0.7',
+            'io.qameta.allure:allure-selenide:2.27.0'
+    )
+    runtimeOnly 'org.aspectj:aspectjweaver:1.9.22.1'
+}
+
+
 compileJava {
     options.encoding = 'UTF-8'
 }
@@ -51,11 +53,12 @@ tasks.withType(Test) {
     }
 }
 
-//task smoke_test(type: Test) {
-//    useJUnitPlatform {
-//        includeTags("smoke")
-//    }
-//}
+
+task rshb_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("Smoke")
+    }
+}
 
 test {
     useJUnitPlatform()
