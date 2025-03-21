@@ -18,11 +18,11 @@ public class TestBase {
     @BeforeAll
     static void setUpBrowserConfiguration() {
         Configuration.baseUrl = "https://www.rshb.ru/";
-        Configuration.browserSize = "1920x1080";
+        Configuration.browserSize = System.getProperty("browserSize");
         Configuration.pageLoadStrategy = "eager";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-        Configuration.browser = "chrome";
-        Configuration.browserVersion = "127";
+        Configuration.browser = System.getProperty("browser");
+        Configuration.browserVersion = System.getProperty("browserVersion", "127");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
