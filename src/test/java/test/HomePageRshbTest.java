@@ -56,7 +56,7 @@ public class HomePageRshbTest extends TestBase{
 
 
     @Test
-    @DisplayName("Проверка незаполненного кредита")
+    @DisplayName("Проверка незаполненного кредита и вывод модальнго окна")
     void negativeCreditCardFillCheck(){
         homePageRshb.openMyPage()
                 .closeCookieBannerVisible()
