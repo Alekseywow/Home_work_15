@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import page.CreditFormPage;
 import page.HomePageRshb;
 
-import static com.codeborne.selenide.Selenide.sleep;
 
 @Tag("Smoke")
 public class HomePageRshbTest extends TestBase{
