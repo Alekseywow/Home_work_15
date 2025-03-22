@@ -1,0 +1,16 @@
+{
+  "base": {
+    "project": "MyHomeWorkTestRshb",
+    "environment": "https://github.com/Alekseywow/Qa_Guru_HW5",
+    "comment": "",
+    "reportLink": "https://jenkins.autotests.cloud/job/MyHomeWorkTestRshb/",
+    "language": "ru",
+    "allureFolder": "allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "7976881703:AAH0i-lZh0o7VtcCIqR7GWE2X9r8QYW3QyQ",
+    "chat": "718540593",
+    "replyTo": ""
+  }
+}

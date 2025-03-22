@@ -1,0 +1,9 @@
+7976881703:AAH0i-lZh0o7VtcCIqR7GWE2X9r8QYW3QyQ
+
+https://api.telegram.org/bot7976881703:AAH0i-lZh0o7VtcCIqR7GWE2X9r8QYW3QyQ/getUpdates
+
+
+718540593
+
+
+java "-DconfigFile=notification/config.json" -jar ./notification/allure-notifications-4.8.0.jar
