@@ -17,7 +17,7 @@
 
 ---
 <p align="center">
-<img href="https://www.jetbrains.com/idea/" src="Images/icons/Intelij_IDEA.svg" height="48" width="48" />
+<img src="Images/icons/Intelij_IDEA.svg" height="48" width="48" /> <a href="https://www.jetbrains.com/idea/">
 <img href="https://www.java.com/ru/" src="Images/icons/Java.svg" height="48" width="48" />
 <img href="https://github.com" src="Images/icons/Github.svg" height="48" width="48" />
 <img href="https://junit.org/junit5/" src="Images/icons/JUnit5.svg" height="48" width="48" />
