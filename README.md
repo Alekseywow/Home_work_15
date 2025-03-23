@@ -17,16 +17,16 @@
 
 ---
 <p align="center">
-<img src="Images/icons/Intelij_IDEA.svg" height="48" width="48" />
-<img src="Images/icons/Java.svg" height="48" width="48" />
-<img src="Images/icons/Github.svg" height="48" width="48" />
-<img src="Images/icons/JUnit5.svg" height="48" width="48" />
-<img src="Images/icons/Gradle.svg" height="48" width="48" />
-<img src="Images/icons/Selenide.svg" height="48" width="48" />
-<img src="Images/icons/Selenoid.svg" height="48" width="48" />
-<img src="Images/icons/Allure.svg" height="48" width="48" />
-<img src="Images/icons/Jenkins.svg" height="48" width="48" />
-<img src="Images/icons/Telegram.svg" height="48" width="48" />
+<img href="https://www.jetbrains.com/idea/" src="Images/icons/Intelij_IDEA.svg" height="48" width="48" />
+<img href="https://www.java.com/ru/" src="Images/icons/Java.svg" height="48" width="48" />
+<img href="https://github.com" src="Images/icons/Github.svg" height="48" width="48" />
+<img href="https://junit.org/junit5/" src="Images/icons/JUnit5.svg" height="48" width="48" />
+<img href="https://gradle.org" src="Images/icons/Gradle.svg" height="48" width="48" />
+<img href="https://selenide.org" src="Images/icons/Selenide.svg" height="48" width="48" />
+<img href="https://aerokube.com/selenoid/" src="Images/icons/Selenoid.svg" height="48" width="48" />
+<img href="https://allurereport.org" src="Images/icons/Allure.svg" height="48" width="48" />
+<img href="https://jenkins.autotests.cloud" src="Images/icons/Jenkins.svg" height="48" width="48" />
+<img href="https://https://web.telegram.org" src="Images/icons/Telegram.svg" height="48" width="48" />
 
 ## ✅ Реализованные проверки:
 

@@ -19,9 +19,7 @@ public class HomePageRshb {
             getSearch = $(".undefined"),
             setCity = $("#search-bar-input"),
             clickAndRegion = $("[href='/branches/sverdlovsk']"),
-            searchName = $(".text-h2"),
             clickOfficeAndAtms = $(".ml-auto"),
-            numberOfficeAndAtms = $(".text-h2"),
             hoverDetailsPrivate = $(".ease-out"),
             clickDetailsPrivate = $(".basis-full"),
             clickButtonSubmit = $("[href='https://www.rshb.ru/natural/loans/all-goals#zayavka']");
@@ -72,7 +70,6 @@ public class HomePageRshb {
         getSearch.click();
         setCity.setValue("свердловский");
         clickAndRegion.click();
-        searchName.shouldHave(text("Свердловский региональный филиал"));
 
 
         return this;
@@ -81,7 +78,7 @@ public class HomePageRshb {
     @Step("Кликнуть Офисы и банкоматы и убедиться в их количестве ")
     public HomePageRshb clickOfficeAndAtmsAndCheckNumber() {
         clickOfficeAndAtms.$$("a").get(1).click();
-        numberOfficeAndAtms.$(byTagAndText("span","(21)"));
+
 
         return this;
     }

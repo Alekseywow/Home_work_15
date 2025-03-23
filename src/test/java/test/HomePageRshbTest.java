@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import page.CreditFormPage;
 import page.HomePageRshb;
+import page.PageOfficeAndAtms;
+import page.PageSearchRegion;
 
 
 @Tag("Smoke")
@@ -12,6 +14,8 @@ public class HomePageRshbTest extends TestBase{
 
     HomePageRshb homePageRshb = new HomePageRshb();
     CreditFormPage creditFormPage = new CreditFormPage();
+    PageSearchRegion pageSearchRegion = new PageSearchRegion();
+    PageOfficeAndAtms pageOfficeAndAtms = new PageOfficeAndAtms();
 
     @Test
     @DisplayName("Проверка вкладок меню при открытии страницы")
@@ -30,6 +34,7 @@ public class HomePageRshbTest extends TestBase{
                 .closeCookieBannerVisible()
                 .clickRegionHomePage()
                 .clickSearchAndSetRegion();
+        pageSearchRegion.pageSearchRegion();
 
 
     }
@@ -42,6 +47,8 @@ public class HomePageRshbTest extends TestBase{
                 .clickRegionHomePage()
                 .clickSearchAndSetRegion()
                 .clickOfficeAndAtmsAndCheckNumber();
+        pageOfficeAndAtms.searchNumberOfficeAndAtms();
+
     }
 
     @Test
