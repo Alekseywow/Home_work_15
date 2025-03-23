@@ -17,16 +17,31 @@
 
 ---
 <p align="center">
-<img src="Images/icons/Intelij_IDEA.svg" height="48" width="48" /> <a href="https://www.jetbrains.com/idea/">
-<img href="https://www.java.com/ru/" src="Images/icons/Java.svg" height="48" width="48" />
-<img href="https://github.com" src="Images/icons/Github.svg" height="48" width="48" />
-<img href="https://junit.org/junit5/" src="Images/icons/JUnit5.svg" height="48" width="48" />
-<img href="https://gradle.org" src="Images/icons/Gradle.svg" height="48" width="48" />
-<img href="https://selenide.org" src="Images/icons/Selenide.svg" height="48" width="48" />
-<img href="https://aerokube.com/selenoid/" src="Images/icons/Selenoid.svg" height="48" width="48" />
-<img href="https://allurereport.org" src="Images/icons/Allure.svg" height="48" width="48" />
-<img href="https://jenkins.autotests.cloud" src="Images/icons/Jenkins.svg" height="48" width="48" />
-<img href="https://https://web.telegram.org" src="Images/icons/Telegram.svg" height="48" width="48" />
+<a href="https://www.jetbrains.com/idea/"><img width="6%" title="Jetbrains" src="Images/icons/Intelij_IDEA.svg"></a>
+<a href="https://www.java.com/ru/"><img width="6%" title="Java" src="Images/icons/Java.svg"></a>
+<a href="https://github.com"><img width="6%" title="GitHub" src="Images/icons/Github.svg"></a>
+<a href="https://junit.org/junit5/"><img width="6%" title="JUnit" src="Images/icons/JUnit5.svg"></a>
+<a href="https://gradle.org"><img width="6%" title="Gradle" src="Images/icons/Gradle.svg"></a>
+<a href="https://selenide.org/"><img width="6%" title="Selenide" src="Images/icons/Selenide.svg"></a>
+<a href="https://aerokube.com/selenoid/"><img width="6%" title="Selenoid" src="Images/icons/Selenoid.svg"></a>
+<a href="https://allurereport.org"><img width="6%" title="Allure" src="Images/icons/Allure.svg"></a>
+<a href="https://jenkins.autotests.cloud"><img width="6%" title="Jenkins" src="Images/icons/Jenkins.svg"></a>
+<a href="https://https://web.telegram.org"><img width="6%" title="Telegram" src="Images/icons/Telegram.svg"></a>
+
+
+
+
+
+[//]: # (<img src="Images/icons/Intelij_IDEA.svg" height="48" width="48" /> <a href="https://www.jetbrains.com/idea/">)
+[//]: # (<img href="https://www.java.com/ru/" src="Images/icons/Java.svg" height="48" width="48" />)
+[//]: # (<img href="https://github.com" src="Images/icons/Github.svg" height="48" width="48" />)
+[//]: # (<img href="https://junit.org/junit5/" src="Images/icons/JUnit5.svg" height="48" width="48" />)
+[//]: # (<img href="https://gradle.org" src="Images/icons/Gradle.svg" height="48" width="48" />)
+[//]: # (<img href="https://selenide.org" src="Images/icons/Selenide.svg" height="48" width="48" />)
+[//]: # (<img href="https://aerokube.com/selenoid/" src="Images/icons/Selenoid.svg" height="48" width="48" />)
+[//]: # (<img href="https://allurereport.org" src="Images/icons/Allure.svg" height="48" width="48" />)
+[//]: # (<img href="https://jenkins.autotests.cloud" src="Images/icons/Jenkins.svg" height="48" width="48" />)
+[//]: # (<img href="https://https://web.telegram.org" src="Images/icons/Telegram.svg" height="48" width="48" />)
 
 ## ✅ Реализованные проверки:
 
